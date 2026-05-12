@@ -5,34 +5,34 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+O gerenciamento financeiro tradicional exige planilhas, cálculos e acompanhamento constante, tornando o processo cansativo e pouco acessível para usuários comuns.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+O sistema automatiza categorização de gastos, criação de relatórios e envio de alertas financeiros, reduzindo esforço manual e ajudando o usuário a tomar decisões mais conscientes.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Pessoas que desejam melhorar organização financeira, controlar gastos e economizar dinheiro no dia a dia.
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+Nexo Finance
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+O agente se comunica como um assistente pessoal financeiro, mantendo interação amigável, motivadora e acessível para usuários com pouco conhecimento em finanças.
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+O agente utiliza comunicação acessível, clara e amigável, evitando excesso de termos técnicos para facilitar o entendimento de usuários comuns.
 
 ### Exemplos de Linguagem
 - Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
@@ -59,10 +59,10 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | Streamlit |
+| LLM | Ollama (local) |
+| Base de Conhecimento | JSON/CSV mockados |
+| Validação | Checagem de alucinações |
 
 ---
 
@@ -70,12 +70,20 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [ ] O agente responde apenas com base nas informações fornecidas pelo usuário.
+- [ ] O agente informa quando não possui dados suficientes para gerar uma resposta confiável.
+- [ ] O agente não substitui consultoria financeira profissional.
+- [ ] O agente não realiza recomendações de investimento sem análise do perfil do usuário.
+- [ ] O agente prioriza privacidade e segurança dos dados financeiros do usuário.
 
 ### Limitações Declaradas
+
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- O agente não substitui consultoria financeira profissional.
+- O agente não garante precisão absoluta nas análises financeiras geradas.
+- O agente depende das informações fornecidas pelo usuário para gerar respostas e recomendações.
+- O agente não realiza operações bancárias ou transações financeiras.
+- O agente não fornece recomendações de investimento personalizadas sem análise completa do perfil financeiro do usuário.
+- O agente pode apresentar limitações na interpretação de informações incompletas ou ambíguas.
+- O agente não possui acesso automático a contas bancárias ou dados financeiros externos sem autorização do usuário.
