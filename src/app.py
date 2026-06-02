@@ -11,7 +11,9 @@ MODELO = "gpt-oss:20b"
 # ========== CARREGAR DADOS ==========
 
 # JSON
-usuarios = json.load(open("data/usuarios.json", encoding="utf-8"))
+usuarios = json.load(
+    open("data/usuarios.json", encoding="utf-8")
+)
 
 metas_financeiras = json.load(
     open("data/metas_financeiras.json", encoding="utf-8")
